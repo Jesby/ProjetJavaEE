@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>JAVA</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+   <!-- Route Administrateur-->
+  
+   <servlet>
+     <servlet-name>connect</servlet-name>
+     <servlet-class>admin.connect</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>connect</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+     <servlet-name>Debut</servlet-name>
+     <servlet-class>admin.Debut</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Debut</servlet-name>
+    <url-pattern>/index</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+     <servlet-name>Insert</servlet-name>
+     <servlet-class>admin.Insert</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Insert</servlet-name>
+    <url-pattern>/insertion</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+     <servlet-name>Editdoc</servlet-name>
+     <servlet-class>admin.Editdoc</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Editdoc</servlet-name>
+    <url-pattern>/edit</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+     <servlet-name>Supdoc</servlet-name>
+     <servlet-class>admin.Supdoc</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Supdoc</servlet-name>
+    <url-pattern>/suprimer</url-pattern>
+  </servlet-mapping>
+  
+  
+     <!-- Route Administrateur auteur-->
+     
+      <!-- Route consulter auteur-->
+      
+  <servlet>
+     <servlet-name>Addauteur</servlet-name>
+     <servlet-class>auteur.Addauteur</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Addauteur</servlet-name>
+    <url-pattern>/indexauteur</url-pattern>
+  </servlet-mapping>
+  
+  
+    <!-- Route inserer auteur auteur-->
+    
+  <servlet>
+     <servlet-name>Insertauteur</servlet-name>
+     <servlet-class>auteur.Insertauteur</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Insertauteur</servlet-name>
+    <url-pattern>/insererauteur</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+    <!-- Route inserer maison  edition-->
+    
+  <servlet>
+     <servlet-name>ajoutermaison</servlet-name>
+     <servlet-class>maisonedition.ajoutemaison</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ajoutermaison</servlet-name>
+    <url-pattern>/inserermaison</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+     <servlet-name>indexMaison</servlet-name>
+     <servlet-class>maisonedition.indexMaison</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>indexMaison</servlet-name>
+    <url-pattern>/indexmaison</url-pattern>
+  </servlet-mapping>
+  
+  
+   <!-- Route inserer type document -->
+  <servlet>
+     <servlet-name>addtypedoc</servlet-name>
+     <servlet-class>tydocument.addtypedoc</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addtypedoc</servlet-name>
+    <url-pattern>/inserertype</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+     <servlet-name>indexTypeDoc</servlet-name>
+     <servlet-class>tydocument.indexTypeDoc</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>indexTypeDoc</servlet-name>
+    <url-pattern>/indexdoc</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+     <servlet-name>Details</servlet-name>
+     <servlet-class>front.Details</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Details</servlet-name>
+    <url-pattern>/details</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
